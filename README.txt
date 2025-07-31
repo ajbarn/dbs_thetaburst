@@ -3,7 +3,7 @@
 Output from CONN toolbox from loni are used to calculate the network level effects
 
 Needed files:
-1. realigned and transformed to MNI space file (e.g. wrEP2D_BOLD_MOCO_P2_3MM_0002_ep2d_bold_moco_p2_3mm_20220601102702_2.nii)
+1. realigned and transformed to MNI space file (e.g. wrEP2D_BOLD_MOCO_P2_3MM_0002_ep2d_bold_moco_p2_3mm_*_2.nii)
     a. a key to know which file belongs to which CONN_ID called 'epi_filenames.xlsx' (e.g. DBSSTIM_S002 and Subject001)
 2. Atlas file in MNI space (e.g. "Schaefer2018_200Parcels_7Networks_order_FSLMNI152_2mm.nii.gz")
 3. 'Schaefer2018_200Parcels_7Networks_order_FSLMNI152_2mm.Centroid_RAS.csv'
@@ -12,7 +12,7 @@ Needed files:
 
 
 Steps
-1. create filelist of MNI files or add new files to the existing filelist.txt (e.g. wrEP2D_BOLD_MOCO_P2_3MM_0002_ep2d_bold_moco_p2_3mm_20220601102702_2.nii)
+1. create filelist of MNI files or add new files to the existing filelist.txt (e.g. wrEP2D_BOLD_MOCO_P2_3MM_0002_ep2d_bold_moco_p2_3mm_*_2.nii)
 2. run trim_TR.sh to remove the first 5 TRs from the nifti files
 3. run tsnr_calc.sh to calculate the voxelwise tSNR across the brain saved as *.nii
 4. create a tSNR file list of the new voxelwise tNSR niftis
